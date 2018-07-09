@@ -58,7 +58,8 @@
         <div class ="col-lg-6 text-left">
           <p class="hr">
           </br>
-          blah blah
+          Genome Wide Association Studies GWAS aim to tease out associtations between single nucleotide polymorphism (SNP) (mutations of a single basepair) and a particular disease or phenotype. Because a phenotype is often influenced by many SNPs, often a large sample size is needed to achieve statistical power. The two common approaches are 1) to gather the required amount of data and analyze the data in one location, or 2) use meta-study techniques. The first approach leads to
+          significant loss in privacy of participants and can have other associated costs. The second approach can lead to bias. In this project, we implemented a decentralized end-to-end GWAS pipeline with population structure control via PCA. The manuscript is currently under preparation. 
           </p>
         </div>
       </div>
@@ -74,7 +75,11 @@
         <div class ="col-lg-6 text-left">
           <p class="hr">
           </br>
-          text text 
+          The picture to the left shows a PCA plot of the Population Reference Sample (POPRES) from Nelson, et. al. 2008 data. Dimensionality reduction algorithms have been a main staple population genetics. PCA is the most common and often most biologically meaningful approach for dimensionality reduction on the genotype matrix (see McVean, 2009). <a href="https://github.com/gabraham/flashpca">Flashpca</a> and <a href="https://www.hsph.harvard.edu/alkes-price/software/">EIGENSOFT</a>
+          provide scalable software for performing PCA, however, they do not handle more sophisticated PCA approaches that are often useful to address biases in the data. For and example see McVean, 2009 for how lack fo balance in samples from each region can lead to bias. This project
+          aims at producing a software package that interfaces with the common input data formats, addresses the aforementioned bias via, weighted PCA, debiases ancient DNA projections, provides other exploratory dimensionality reduction approaches and works with data collected on different arrays. As opposed to the two aforementioned softwares that aim at biobank size datasets, this package is aimed for use with small and medium size cohorts. The accompanied tutorial will be linked
+          here. 
+          This project is currently in progress.
           </p>
         </div>
       </div>
